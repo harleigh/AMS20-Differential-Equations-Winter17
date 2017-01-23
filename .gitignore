@@ -1,0 +1,3 @@
+# Ignore the matlab autosave files and fig files
+*.asv
+*.fig
