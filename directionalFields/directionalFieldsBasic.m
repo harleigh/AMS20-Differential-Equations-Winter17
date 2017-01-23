@@ -46,9 +46,10 @@ dT = ones(size(dY));
 
 
 %Now, at each point (T,Y), we plot
-L=sqrt(1+dY.^2);
+L=sqrt(dT.^2 + dY.^2);  %get the length (two norm) of the vector [dT dY]
 quiver(T, Y, dT./L, dY./L, 0.5);
 axis tight;
+grid on;
 xlabel('t (time)');
 ylabel('y (range)');
 
